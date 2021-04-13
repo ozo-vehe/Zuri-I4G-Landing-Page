@@ -172,8 +172,12 @@ form div img {
 #password-img {
     left: 5px;
 }
-#visibility-img {
+#visible-img,
+#invisible-img {
     right: 5px;
+}
+.hidden {
+    visibility: hidden;
 }
 
 form input {
@@ -289,7 +293,3 @@ footer p {
         border-radius: 3px;
     }
 }
-
-
-
-
