@@ -233,9 +233,12 @@ footer {
     color: var(--bg-color);
     text-align: left;
     padding: 5px 5%;
-    height: 100px;
+    height: 130px;
     box-sizing: border-box;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 footer p {
     margin: 5px 0px;
