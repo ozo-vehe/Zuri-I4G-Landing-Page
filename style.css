@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    --sec-color: #f54122;
+    --pry-color: #1f1f1f;
+    --bg-color: #fdfcfc;
+    --border-color: #ccc7c7;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    background-color: var(--bg-color);
+    font-size: 18px;
+    color: var(--pry-color);
+    font-family: 'Lato';
+}
+
+.nav {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 30px;
+}
+.zuri-image {
+    width: 150px;
+    height: 40px;
+}
+.zuri-image img {
+    width: 100%;
+    height: 100%;
+}
+.nav-menu {
+    margin: 0px;
+    padding: 0px;
+}
+.nav-menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+.nav-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.nav-menu ul li a {
+    padding: 10px 15px;
+    margin: 0px;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--sec-color);
+    transition: all .3s;
+}
+.nav-menu ul li a:hover {
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+section {
+    padding: 0px 10%;
+    margin: 30px 0px;
+}
+.nav-bar {
+    display: none;
+}
+
+/****************   Header Content  *****************/
+header {
+    padding: 0px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header div {
+    width: 500px;
+    height: auto;
+    margin: 0px 0px 50px 0px;
+}
+header div img {
+    width: 100%;
+}
+header span {
+    color: var(--sec-color);
+    display: block;
+}
+.header-content button {
+    color: var(--bg-color);
+    background-color: var(--sec-color);
+    text-transform: capitalize;
+    width: 90%;
+    padding: 13px 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all .3s;
+}
+.header-content button:hover {
+    box-shadow: 0px 0px 3px var(--pry-color);
+}
+
+/************   Section Details     ***************/
+.section-details {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-details-content {
+    width: 400px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+.section-details-image {
+    width: 450px;
+    height: 260px; 
+    margin: 20px 10px;
+    border-radius: 3px;
+}
+.section-details-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+/**************     Sign Up Form    ******************/
+.zuri-signup {
+    margin: 50px 0px;
+    padding-top: 30px;
+    text-align: center;
+}
+.zuri-signup > p {
+    font-size: 24px;
+}
+form div,
+form button
+{
+    margin: 15px auto;
+    width: 320px;
+    border-radius: 5px;
+    position: relative;
+}
+form button {
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    border: none;
+}
+form div {
+    border: thin solid var(--border-color);
+    padding: 0px 5px;
+    height: 45px;
+}
+form div img {
+    cursor: pointer;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#email-img {
+    left: 5px;
+}
+#password-img {
+    left: 5px;
+}
+#visibility-img {
+    right: 5px;
+}
+
+form input {
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: inherit;
+    outline: none;
+    border: none;
+    background: none;
+}
+form button {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: all .3s;
+}
+form button:hover {
+    box-shadow: 0px 0px 2px var(--pry-color);
+}
+.google-signup {
+    position: relative;
+    border: thin solid var(--border-color);
+    border-radius: 5px;
+    width: 320px;
+    height: 40px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.google-signup:hover {
+    box-shadow: 0px 0px 3px var(--border-color);
+}
+.google-signup p {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.google-signup img {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 35px;
+}
+
+/****************   Footer  ***************/
+footer {
+    background-color: var(--pry-color);
+    color: var(--bg-color);
+    text-align: left;
+    padding: 5px 5%;
+    height: 70px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+footer p {
+    margin: 5px 0px;
+    text-transform: capitalize;
+}
+
+/*************  Media Querry    **************/
+@media  screen and (max-width: 760px) {
+    .nav-bar {
+        display: block;
+    }
+    .nav-bar div {
+        width: 35px;
+        height: 4px;
+        margin: 7px auto;
+        background-color: var(--pry-color);
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        height: 0px;
+        padding-top: 10px;
+        overflow: hidden;
+        text-align: center;
+        background-color: var(--bg-color);
+        transition: all 0.2s;
+    }
+    .nav-links.dropdown {
+        height: 170px;
+    }
+    .nav-menu ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav-menu ul li {
+        margin: 10px 0px;
+        display: block;
+    }
+    .nav-menu ul li a {
+        color: var(--pry-color);
+    }
+    .nav-menu ul li a:hover {
+        background-color: var(--sec-color);
+        color: var(--bg-color);
+    }
+
+/***********    Section     *************/
+    .section-details-image {
+        width: 450px;
+        height: auto; 
+        margin: 20px 10px;
+        border-radius: 3px;
+    }
+}
+
+
+
+
